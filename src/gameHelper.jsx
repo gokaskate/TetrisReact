@@ -13,7 +13,7 @@ export const checkCollision = (player, stage, { x: moveX, y: moveY }) => {
                 if (
                 !stage[y + player.pos.y + moveY] ||
                 !stage[y + player.pos.y + moveY][x + player.pos.x + moveX] ||
-                stage [y + player.pos.y + moveY][x + player.pos.x + moveX][1] !== 'clear'
+                stage[y + player.pos.y + moveY][x + player.pos.x + moveX][1] !== 'clear'
                 ) {
                     return true;
                 }
